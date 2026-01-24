@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Car Showroom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🚗 Interactive Car Showroom</h1>
+  <p>Click on a car part to evaluate and assemble it</p>
+
+  <div class="showroom">
+    <div class="car">
+      <div class="part engine" id="engine">Engine</div>
+      <div class="part wheels" id="wheels">Wheels</div>
+      <div class="part doors" id="doors">Doors</div>
+      <div class="part lights" id="lights">Lights</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="addPart('engine')">Evaluate Engine</button>
+    <button onclick="addPart('wheels')">Evaluate Wheels</button>
+    <button onclick="addPart('doors')">Evaluate Doors</button>
+    <button onclick="addPart('lights')">Evaluate Lights</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
